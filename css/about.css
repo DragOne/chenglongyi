@@ -1,0 +1,74 @@
+#nav #about
+{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#content #resume
+{
+	float: right;
+	margin-right: 40px;
+}
+
+#content #resume a:link, #content #resume a:visited
+{
+	opacity: 0.5;
+}
+
+#content #resume a:hover
+{
+	opacity: 1;
+}
+
+#content h3.category
+{
+	width: 140px;
+	margin-bottom: 90px;
+}
+
+#content h3.time
+{
+	width: 190px;
+	margin-left: 35px;
+}
+
+#content img.logo
+{
+	display: inline-block;
+	margin: 15px 0 0 80px;
+}
+
+#content .detail
+{
+	width: 60%;
+	display: inline-block;
+	margin: 0 0 60px 85px;
+	vertical-align: top;
+}
+
+#content .edu-detail
+{
+	width: 60%;
+	display: inline-block;
+	margin: 0 0 60px 365px;
+	vertical-align: top;
+}
+
+#content h4
+{
+	margin:0 0 30px 0px;
+	color: #444;
+}
+
+#content h4 span
+{
+	float: right;
+	margin-right: 40px;
+	font-weight: normal;
+	color: #757575;
+}
+
+#content .detail p
+{
+	margin-left: 24px;
+}

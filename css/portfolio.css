@@ -1,0 +1,56 @@
+#nav #portfolio
+{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+h3
+{
+	width: 200px;
+	line-height: normal;
+}
+
+#content ul
+{
+	list-style-type: none;
+}
+
+#content li
+{
+	height:300px;
+	margin-bottom: 60px;
+}
+
+#content li img
+{
+	margin-left: 170px;
+	margin-right: 66px;
+	float: left;
+}
+
+.intro h4
+{
+	margin-bottom: 40px;
+	padding-top: 26px;
+}
+
+.intro h4 a
+{
+	color: #757575;
+	padding: 15px 35px 15px 0;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.intro p
+{
+	padding-right: 40px;
+}
+
+
+#bigimage 
+{
+	position: absolute;
+	padding: 10px;
+	background: #e3e3e3;
+	border: 1px solid #757575;
+}

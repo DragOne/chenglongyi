@@ -1,0 +1,69 @@
+#nav #contact
+{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+h3
+{
+	width: 90px;
+}
+
+#basic
+{
+	margin-bottom: 80px;
+}
+
+#basic div
+{
+	display: inline-block;
+}
+
+#basic img
+{
+	margin-left: 16px;
+}
+
+#basic p
+{
+	position: relative;
+	bottom: 13px;
+	margin: 0 120px 0 30px;
+}
+
+#basic a
+{
+	text-decoration: none;
+	color: #444;
+}
+
+#basic a:hover
+{
+	text-decoration: underline;
+}
+
+#social ul
+{
+	list-style-type: none;
+	margin-bottom: 
+}
+
+#social li
+{
+	display: inline-block;
+	margin: 0 50px 0 16px;
+}
+
+#social a img
+{
+	transition: transform 0.3s;
+	-ms-transition: -ms-transform 0.3s;
+	-webkit-transition: -webkit-transform 0.3s;
+}
+
+#social a img:hover
+{
+	transform: rotate(6deg);
+	-ms-transform: rotate(6deg); /* IE 9 */
+	-webkit-transform: rotate(6deg); /* Safari and Chrome */
+}

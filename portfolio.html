@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    <script type="text/javascript" language="javascript" src="js/nav.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function(){
+            $("a img").fadeIn(1024);
+
+            $("a img").mousemove(function(event){
+                var imgname = $(this).attr("alt");
+                var posi = $(this).offset();
+
+                if(event.pageY <= posi.top + $(this).height()/2)
+                {
+                    if (event.pageX <= posi.left + $(this).width()/2)
+                    {
+                        $("#bigimage").attr("src", "pic/portfolio/big/" + imgname + "1.jpg");
+                    }
+                    else
+                    {
+                        $("#bigimage").attr("src", "pic/portfolio/big/" + imgname + "2.jpg");
+                    }
+                }
+                else
+                {
+                    if (event.pageX <= posi.left + $(this).width()/2)
+                    {
+                        $("#bigimage").attr("src", "pic/portfolio/big/" + imgname + "4.jpg");
+                    }
+                    else
+                    {
+                        $("#bigimage").attr("src", "pic/portfolio/big/" + imgname + "3.jpg");
+                    }
+                }
+
+                $("#bigimage").css("left", event.pageX+30);
+                $("#bigimage").css("top", event.pageY+10);
+            });
+
+            $("a img").hover(function(){
+                $("#bigimage").css("display","block");
+            },function(){
+                $("#bigimage").attr("src","pic/portfolio/big/loading.gif");
+                $("#bigimage").css("display","none");
+            });
+        });
+    </script>
+
+    <title> Longyi Cheng </title>
+</head>
+
+<body onload="menuSlider.init('nav','slide')">
+    <div id = "page">
+
+        <div id = "header">
+            <h1>Longyi Cheng</h1>
+            <h2>I am Longyi, call me Dragon is OK. Nice to meet you ! ;)</h2>
+        </div>
+
+        <div id = "menu">
+            <ul id = "nav">
+                <li id = "home"><a href="index.html">HOME</a></li>
+                <li id = "about"><a href="about.html">ABOUT</a></li>
+                <li value = "1" id = "portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
+                <li id = "contact"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div id = "slide"><!-- --></div>
+        </div>
+
+        <div id="content">
+
+            <div>
+                <img id="bigimage">
+            </div>
+
+            <h3>Web Design</h3>
+            <ul>
+            	<li>
+                    <a href="http://52.91.186.128" target="_blank"><img src="pic/portfolio/15637sn.png" alt="15637sn"></a>
+
+                    <div class="intro">
+                        <h4><a href="http://52.91.186.128" target="_blank">15637 Social Network</a></h4>
+                        <p>
+                           A Twitter-like social network built by Django, achieved features including user registration and authentication, input validation, photo uploading, quasi-real-time updates, and following system. Finished both front and back ends development individually.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="http://ec2-54-210-190-203.compute-1.amazonaws.com" target="_blank"><img src="pic/portfolio/obattle.png" alt="obattle"></a>
+
+                    <div class="intro">
+                        <h4><a href="http://ec2-54-210-190-203.compute-1.amazonaws.com" target="_blank">OBATTLE</a></h4>
+                        <p>OBATTLE is a HTML5 web game. I made it when I attended the IDEA-X Summer School in Centre For Digital Media in Canada. I learnt HTML5 there, and made this game with my friends.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="works/guangyin/index.html" target="_blank"><img src="pic/portfolio/guangyin.png" alt="guangyin"></a>
+
+                    <div class="intro">
+                        <h4><a href="works/guangyin/index.html" target="_blank">Guang Yin</a></h4>
+                        <p>
+                            Guangyin is a website introducing Chinese traditional Twenty-four Solar Terms. It is an initial project of my javascript study. I made this website with one partner.
+                        </p>
+                    </div>
+                </li>
+
+                 <li>
+                    <a href="works/nzsi/index.html" target="_blank"><img src="pic/portfolio/nzsi.png" alt="nzsi"></a>
+
+                    <div class="intro">
+                        <h4><a href="works/nzsi/index.html" target="_blank">NZ South Island</a></h4>
+                        <p>
+                            I created this website in memory of my amazing travel to New Zealand South Island. I finished it with a friend who helped me collect tourism information. I designed the layout and wrote most of the code.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="works/wjhotel" target="_blank"><img src="pic/portfolio/wjhotel.png" alt="wjhotel"></a>
+
+                    <div class="intro">
+                        <h4><a href="works/wjhotel" target="_blank">Wang Jiang Hotel</a></h4>
+                        <p>This is a demo website for managing a hotel, including an online booking system for customers, and a background management system for administrators. I bulit this website for practicing my PHP & MySQL study.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <h3>Game Development</h3>
+            <ul>
+	            <li>
+            		<a href="https://vimeo.com/195570882" target="_blank"><img src="pic/portfolio/kungfumonk.png" alt="kungfumonk"></a>
+
+                    <div class="intro">
+                        <h4><a href="https://vimeo.com/195570882" target="_blank">Kungfu Monk</a></h4>
+                        <p>
+                            A VR game works on HTC VIVE, finished in only two weeks on BVW class, by a small team of 5 people including me as a programmer. Players need to pass a series of challenges by using swords to hit and dodge incoming darts, to become a kungfu master.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="https://www.dropbox.com/sh/zr38iiquz4lg25h/AAASop5pMjQ_mtWLw1Zo3SAka" target="_blank"><img src="pic/portfolio/leapmusic.png" alt="leapmusic"></a>
+
+                    <div class="intro">
+                        <h4><a href="https://www.dropbox.com/sh/zr38iiquz4lg25h/AAASop5pMjQ_mtWLw1Zo3SAka" target="_blank">Leap Music</a></h4>
+                        <p>
+                            A 3D music game played on Leap Motion. Players use finger gestures like swing to match rhythm. This game is made by Unity, and there are two versions for both PC and Mac.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="https://www.dropbox.com/sh/rfxf4pymhr6z0nv/hsVr56VZM7" target="_blank"><img src="pic/portfolio/circles.png" alt="circles"></a>
+
+                    <div class="intro">
+                        <h4><a href="https://www.dropbox.com/sh/rfxf4pymhr6z0nv/hsVr56VZM7" target="_blank">Circles (iOS)</a></h4>
+                        <p>Circles is an iOS game, the rule is same as OBATTLE, absorb the smaller and avoid being absorbed by the bigger. We redesigned the UI, to ensure it fits mobile devices. I made this game by Adobe Air, and it works well on both iPhone and iPad.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="https://www.dropbox.com/sh/o95y5mrasb17buy/57v5pEoYg_" target="_blank"><img src="pic/portfolio/ca.png" alt="ca"></a>
+
+                    <div class="intro">
+                        <h4><a href="https://www.dropbox.com/sh/o95y5mrasb17buy/57v5pEoYg_" target="_blank">Circles (Android)</a></h4>
+                        <p>This is Circles Android version. We redesigned the UI and music again, now it looks more beautiful and professional. It is still made by Adobe Air, adapting the differenet resolustions on every Android device automatically. </p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="https://www.dropbox.com/sh/xn6eqp29rry16qy/YEh9KTdkEt?m" target="_blank"><img src="pic/portfolio/tank.png" alt="tank"></a>
+
+                    <div class="intro">
+                        <h4><a href="https://www.dropbox.com/sh/xn6eqp29rry16qy/YEh9KTdkEt?m" target="_blank">Apocalypse Tank</a></h4>
+                        <p>
+                            This is a 3D model of Apocalypse Tank. I made it by 3ds Max.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="https://www.dropbox.com/sh/y07iga4jz254okd/RVcWhN-p-n" target="_blank"><img src="pic/portfolio/gauss.png" alt="gauss"></a>
+
+                    <div class="intro">
+                        <h4><a href="https://www.dropbox.com/sh/y07iga4jz254okd/RVcWhN-p-n" target="_blank">GAUSS Calculator</a></h4>
+                        <p>GAUSS Calculator is an iPhone calculator app, which can set varibles, check formulas and review calculator history. I made this app when I learnt Xcode and Objective-C to creat iOS apps.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <h3>Video Production</h3>
+
+            <ul>
+            	<li>
+                    <a href="https://youtu.be/K4FUjW4eFgY" target="_blank"><img src="pic/portfolio/hilarious.png" alt="hilarious"></a>
+
+                    <div class="intro">
+                        <h4><a href="https://youtu.be/K4FUjW4eFgY" target="_blank">Hilarious</a></h4>
+                        <p>
+                        Hilarious is a 360-degree video which plays better on a smartphone with a VR cardboard. It is finished within two weeks by a small team of 5 people on the Visual Story class in CMU-ETC.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="https://vimeo.com/140041380" target="_blank"><img src="pic/portfolio/nbtl.png" alt="nbtl"></a>
+
+                    <div class="intro">
+                        <h4><a href="https://vimeo.com/140041380" target="_blank">News Batong Line</a></h4>
+                        <p>
+                            News Batong Line is an English news programme focusing on campus life. Although we made this programme as a teamwork, I took charge of almost every part of it, including shooting, editing, post production, and the virtual studio.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="http://vimeo.com/63993683" target="_blank"><img src="pic/portfolio/qqmovie.png" alt="qqmovie"></a>
+
+                    <div class="intro">
+                        <h4><a href="http://vimeo.com/63993683" target="_blank">QQ Movie ad</a></h4>
+                        <p>
+                            This is an unofficial video ad for the iPhone app QQ Movie. I like this app, so I made this uncommercial video with my friends. Just for fun.
+                        </p>
+                    </div>
+                </li>
+            </ul>            
+        </div>
+
+        <div id = "bottom">
+            <p>Latest Update: 13 Jan 2016 © Longyi Cheng / 程龙一</p>
+        </div>
+    </div>
+</body>
+
+</html>
